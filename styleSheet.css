@@ -1,0 +1,106 @@
+* 
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	font: 14px sans-serif;
+	text-align: center;
+}
+
+.header
+{
+	text-align: center;
+	padding: 50px;
+	background-image: linear-gradient(to right, #5CEAE5, #3189F1);
+	color: white;
+	
+	/* -webkit-text-stroke: 1.5px black; */
+}
+
+.header h1
+{
+	font-size: 50px;
+}
+
+.navbar
+{
+	overflow: hidden;
+	background-color: #333;
+	overflow: auto;
+	position: -webkit-sticky; /* For Safari */
+    position: sticky;
+	top: 0;
+}
+
+.navbar a
+{
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px 25px;
+	text-decoration: none;
+	cursor: pointer;
+    transition: all 0.2s ease;
+	font-size: 20px;
+}
+
+.navbar a.right
+{
+	float: right;
+}
+
+.navbar a:hover
+{
+	background-color: #222222;
+}
+
+.row
+{
+	display: flex;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.side
+{
+	padding: 20px;
+	flex: 10%;
+}
+
+.main
+{
+	padding: 20px;
+	flex: 70%;
+}
+
+/* wildcards */
+.fakeimg
+{
+	background-image: linear-gradient(to right, #7CF8F0, #2782F8);
+	width: 80%;
+	padding: 20px;
+	margin: auto;
+}
+
+.footer
+{
+	background-color: #DCDCDC;
+	padding: 100px;
+	margin: auto;
+}
+
+@media screen and (max-width: 700px) {
+	.row {   
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.navbar a {
+		float: none;
+		width:100%;
+	}
+}
